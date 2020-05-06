@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/released_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/round_background"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/released_image"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_margin="15dp"
+        android:src="@color/colorAccent" />
+
+    <TextView
+
+        android:id="@+id/released_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@+id/released_image"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称"
+        android:textColor="@color/Black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/money_released"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/released_name"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@id/released_image"
+        android:text="￥"
+        android:textColor="@color/Orange" />
+
+    <TextView
+        android:id="@+id/released_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/released_name"
+        android:layout_margin="5dp"
+        android:layout_toEndOf="@id/money_released"
+        android:text="9000"
+        android:textColor="@color/Orange" />
+
+    <TextView
+        android:id="@+id/ori_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/released_name"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@id/released_price"
+        android:text="原价" />
+
+    <TextView
+        android:id="@+id/released_original_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/released_name"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@id/ori_money"
+        android:text="6000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ori_money"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/released_image"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+
+        <TextView
+            android:id="@+id/released_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="已发布" />
+
+        <Button
+            android:id="@+id/released_button_edit"
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/button_background_released_function"
+            android:stateListAnimator="@null"
+            android:text="编辑" />
+
+        <Button
+            android:id="@+id/released_button_delete"
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"
+
+            android:background="@drawable/button_background_released_function"
+            android:stateListAnimator="@null"
+            android:text="删除" />
+
+    </LinearLayout>
+
+</RelativeLayout>

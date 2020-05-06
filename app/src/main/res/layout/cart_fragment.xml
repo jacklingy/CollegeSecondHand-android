@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.cart.CartFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/cart_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentTop="true"
+            android:background="?attr/colorPrimary"
+            app:title="购物车"
+            app:titleTextAppearance="@style/Toolbar.TitleText"
+            app:titleTextColor="@color/White" />
+
+        <FrameLayout
+            android:id="@+id/cart_frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/cart_bottom_bar"
+            android:layout_below="@+id/cart_toolbar"
+            android:paddingTop="10dp">
+
+            <com.blcodes.views.refresh.BounceLayout
+                android:id="@+id/cart_bounce_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/Gray_light">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/cart_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp" />
+
+            </com.blcodes.views.refresh.BounceLayout>
+
+
+        </FrameLayout>
+
+
+        <!--bottom bar-->
+        <LinearLayout
+            android:id="@+id/cart_bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="start|center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:gravity="center|start"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+
+
+            <CheckBox
+                android:id="@+id/cart_check_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp" />
+
+            <TextView
+                android:textSize="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全选" />
+
+            <TextView
+                android:textSize="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="合计：" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="￥"
+                android:textColor="@color/Orange" />
+
+            <TextView
+                android:id="@+id/cart_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="0.00"
+                android:textColor="@color/Orange" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="不含运费"
+                android:textSize="10sp"
+                android:visibility="gone"
+              />
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/cart_button_delete"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:background="@drawable/button_background_released_function"
+                android:stateListAnimator="@null"
+                android:text="删除"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/cart_button_commit"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background_dark"
+                android:stateListAnimator="@null"
+                android:text="结算"
+                android:textColor="@color/White"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</FrameLayout>

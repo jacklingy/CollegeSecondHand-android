@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Gray_light"
+    android:orientation="vertical"
+    tools:context=".ui.home.EditAddressActivity">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系人姓名"
+            android:textColor="@color/Black" />
+
+        <EditText
+            android:id="@+id/editor_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/round_background_adjustable"
+            android:hint="收件人姓名"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号码    "
+            android:textColor="@color/Black" />
+
+        <EditText
+            android:id="@+id/editor_phone"
+
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/round_background_adjustable"
+            android:hint="收件人手机号码"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:minHeight="50dp"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="详细地址    "
+            android:textColor="@color/Black" />
+
+        <EditText
+            android:id="@+id/editor_address"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/round_background_adjustable"
+            android:gravity="center|start"
+            android:hint="详细地址"
+            android:minHeight="40dp"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:padding="10dp"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+    <Button
+
+        android:id="@+id/editor_delete"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/button_background_red"
+        android:text="删除"
+        android:textColor="@color/White"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/editor_save"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/button_background_primary"
+        android:text="保存"
+        android:textColor="@color/White"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_test"
+/>
+</LinearLayout>

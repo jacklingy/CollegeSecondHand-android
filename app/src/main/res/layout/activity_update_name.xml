@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/Gray_light"
+    tools:context=".ui.my.modify.UpdateNameActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/update_name_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:navigationIcon="@drawable/ic_arrow"
+        app:title="修改昵称"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        app:titleTextColor="@color/White"
+        />
+
+    <EditText
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:id="@+id/update_name_name"
+
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入昵称"/>
+    <TextView
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="好的昵称更容易促成交易。"/>
+
+    <Button
+
+        android:id="@+id/update_name_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/button_background_save"
+        android:text="完成"
+        android:textColor="@color/White"
+        android:textSize="17sp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ui.my.login.LoginActivity">
+
+
+
+    <ImageView
+        android:layout_gravity="center"
+
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="50dp"
+        android:src="@mipmap/ic_launcher_v2" />
+
+    <EditText
+
+        android:id="@+id/login_account"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/edit_background"
+        android:hint="请输入账号"
+        android:paddingLeft="30dp" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/edit_background"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:paddingLeft="30dp" />
+
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/button_background_primary"
+        android:text="登录"
+        android:textColor="@color/White"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/newRegister"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="end"
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新用户注册"
+        android:textSize="15sp" />
+
+
+</LinearLayout>

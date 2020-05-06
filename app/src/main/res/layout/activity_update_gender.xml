@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.my.modify.UpdateGenderActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/update_gender_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:navigationIcon="@drawable/ic_arrow"
+        app:title="修改性别"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        app:titleTextColor="@color/White"
+        />
+
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+        <RadioButton
+            android:id="@+id/radio_button_male"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="男"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="?android:attr/listDivider" />
+
+        <RadioButton
+            android:id="@+id/radio_button_female"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="女"
+
+            android:textSize="20sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="?android:attr/listDivider" />
+
+
+        <RadioButton
+            android:id="@+id/radio_button_secret"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+            android:text="保密"
+            android:textSize="20sp" />
+
+    </RadioGroup>
+
+
+    <Button
+
+        android:id="@+id/update_gender_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/button_background_save"
+        android:text="完成"
+        android:textColor="@color/White"
+        android:textSize="17sp"/>
+</LinearLayout>

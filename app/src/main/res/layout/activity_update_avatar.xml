@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    tools:context=".ui.my.modify.UpdateAvatarActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/update_avatar_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:navigationIcon="@drawable/ic_arrow"
+        app:title="修改头像"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        app:titleTextColor="@color/White"
+        />
+
+
+    <ImageView
+        android:id="@+id/update_avatar_image"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="100dp"
+        android:src="@mipmap/ic_launcher_v2" />
+
+    <Button
+        android:id="@+id/update_avatar_capture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/button_background_primary"
+        android:text="拍摄"
+        android:textColor="@color/White"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/update_avatar_pick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/button_background_primary"
+        android:text="从相册选取"
+        android:textColor="@color/White"
+        android:textSize="17sp" />
+
+
+    <Button
+        android:id="@+id/update_avatar_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/button_background_save"
+        android:text="完成"
+        android:textColor="@color/White"
+        android:textSize="17sp" />
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.SearchActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/search_activity_toolbar"
+        style="@style/Toolbar.MyStyle"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:navigationIcon="@drawable/ic_arrow"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="搜索商品"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        app:titleTextColor="@android:color/white" />
+
+    <FrameLayout
+        android:id="@+id/search_frame_layout"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_activity_toolbar">
+
+        <com.blcodes.views.refresh.BounceLayout
+            android:id="@+id/search_bounce_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hello" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:background="@color/Gray"
+                android:id="@+id/search_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </com.blcodes.views.refresh.BounceLayout>
+
+    </FrameLayout>
+
+
+</RelativeLayout>
